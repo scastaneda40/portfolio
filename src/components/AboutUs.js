@@ -123,7 +123,7 @@ const Education = () => (
         {/* Single Education Starts */}
         <div className="resume-content">
           <h6 className="uppercase">
-            <span>Master's in Music Education - </span>Westminster Choir College
+            <span>Master&apos;s in Music Education - </span>Westminster Choir College
           </h6>
           <span className="date">
             <i className="fa fa-calendar-o" /> 2013 - 2015
@@ -138,7 +138,7 @@ const Education = () => (
         {/* Single Education Starts */}
         <div className="resume-content">
           <h6 className="uppercase">
-            <span>Bachelor's in Piano Performance - </span>Hampton University
+            <span>Bachelor&apos;s in Piano Performance - </span>Hampton University
           </h6>
           <span className="date">
             <i className="fa fa-calendar-o" /> 2007 - 2012
@@ -362,11 +362,11 @@ const AboutUs = ({ dark }) => {
               </h6>
               <div className="col m12 l12 xl9 p-none">
                 <p className="second-font">
-              <p>Hi there! I’m Stephen, a front-end software engineer with a twist—I started my career as a music educator with a Master’s degree in Music Education. These days, I channel that same creativity and attention to detail into crafting sleek, user-friendly web applications with React, JavaScript, and TypeScript.</p>
+              <p>Hi there! I&apos;m Stephen, a front-end software engineer with a twist—I started my career as a music educator with a Master&apos;s degree in Music Education. These days, I channel that same creativity and attention to detail into crafting sleek, user-friendly web applications with React, JavaScript, and TypeScript.</p>
 
-<p>From designing accessible websites for government clients to building dynamic component libraries, I thrive on turning ideas into functional, scalable solutions. Collaboration is my thing, whether it’s with designers, developers, or cross-functional teams.</p>
+<p>From designing accessible websites for government clients to building dynamic component libraries, I thrive on turning ideas into functional, scalable solutions. Collaboration is my thing, whether it&apos;s with designers, developers, or cross-functional teams.</p>
 
-<p>When I’m not coding, you can find me creating music, exploring new tech tools, or soaking up the vibrant energy of Los Angeles. My approach combines artistry with engineering to deliver digital experiences that truly resonate.</p>
+<p>When I&apos;m not coding, you can find me creating music, exploring new tech tools, or soaking up the vibrant energy of Los Angeles. My approach combines artistry with engineering to deliver digital experiences that truly resonate.</p>
 
                 </p>
               </div>
