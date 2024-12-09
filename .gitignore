@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+.next/
+out/
+dist/
+build/
+
+# Environment files
+.env
+.env.*.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor settings
+.idea/
+.vscode/
+*.swp
+
+# Package lock files (optional, if using Yarn instead of npm)
+package-lock.json
