@@ -27,3 +27,8 @@ Thumbs.db
 
 # Package lock files (optional, if using Yarn instead of npm)
 package-lock.json
+
+/build/
+/dist/
+
+/package-lock.json
