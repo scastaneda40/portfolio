@@ -32,3 +32,4 @@ package-lock.json
 /dist/
 
 /package-lock.json
+.vercel
