@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
 import { memo, useState } from "react";
 import SectionContainer from "./SectionContainer";
+
 const GetInTouch = () => {
   const [mailData, setMailData] = useState({
     name: "",
@@ -8,66 +9,80 @@ const GetInTouch = () => {
     message: "",
   });
   const { name, email, message } = mailData;
-  const [error, setError] = useState(null);
-  const onChange = (e) =>
+  const [error, setError] = useState(null); // Controls error or confirmation messages
+
+  // Handle input changes
+  const onChange = (e) => {
     setMailData({ ...mailData, [e.target.name]: e.target.value });
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (name.length === 0 || email.length === 0 || message.length === 0) {
-      setError(true);
-      clearError();
-    } else {
-      emailjs
-        .send(
-          "service_uck1hkq", // service id
-          "template_ea99i99", // template id
-          mailData,
-          "SrCPeEA5iPN4pvUND" // public api
-        )
-        .then(
-          (response) => {
-            setError(false);
-            clearError();
-            setMailData({ name: "", email: "", message: "" });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
-    }
   };
+
+  // Clear the error or confirmation message after a timeout
   const clearError = () => {
     setTimeout(() => {
       setError(null);
-    }, 2000);
+    }, 3000); // Message disappears after 3 seconds
   };
+
+  // Handle form submission
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted with:", mailData);
+
+    if (!name || !email || !message) {
+      setError("Please fill out all fields."); // Error message
+      clearError();
+      return;
+    }
+
+    const templateParams = {
+      name: mailData.name,
+      email: mailData.email,
+      message: mailData.message,
+    };
+
+    emailjs
+      .send(
+        "service_uck1hkq", // Replace with your service ID
+        "template_ztn11aq", // Replace with your template ID
+        templateParams,
+        "SrCPeEA5iPN4pvUND" // Replace with your public key
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully!", response.status, response.text);
+          setError("Your message has been sent successfully!"); // Success message
+          setMailData({ name: "", email: "", message: "" }); // Clear form
+          clearError();
+        },
+        (err) => {
+          console.error("Failed to send email:", err);
+          setError("Failed to send your message. Please try again."); // Error message
+          clearError();
+        }
+      );
+  };
+
   return (
     <SectionContainer
       sectionName="Contact"
       title={{ first: "get", last: "in touch" }}
     >
       <div className="bl-content">
-        {/* Main Heading Starts */}
         <div className="container page-title center-align">
           <h2 className="center-align">
             <span data-hover="get">get </span>
-            {""}
             <span data-hover="in touch">in touch</span>
           </h2>
         </div>
-        {/* Main Heading Ends */}
         <div className="container">
-          {/* Divider Starts */}
           <div className="divider center-align">
             <span className="outer-line" />
             <span className="fa fa-envelope-open" aria-hidden="true" />
             <span className="outer-line" />
           </div>
-          {/* Divider Ends */}
           <div className="row contact section-padding">
-            {/* Contact Infos Starts */}
+            {/* Left Section */}
             <div className="col s12 m5 l5 xl4 leftside">
-              {/* Contacts Starts */}
               <h6 className="font-weight-700 uppercase">Phone</h6>
               <span className="font-weight-400 second-font">
                 <i className="fa fa-phone" /> 310-901-9100
@@ -76,64 +91,23 @@ const GetInTouch = () => {
               <span className="font-weight-400 second-font">
                 <i className="fa fa-envelope" /> stephen.castaneda40@gmail.com
               </span>
-              {/* <h6 className="font-weight-700 uppercase">Skype</h6>
-              <span className="font-weight-400 second-font">
-                <i className="fa fa-skype" /> mark.smith
-              </span> */}
               <h6 className="font-weight-700 uppercase">Location</h6>
               <span className="font-weight-400 second-font">
                 <i className="fa fa-home" /> Los Angeles, California
               </span>
-              <br />
-              {/* Contacts Ends */}
-              {/* Social Media Profiles Starts */}
-              {/* <h6 className="font-weight-700 uppercase">Social Profiles</h6>
-              <div className="social">
-                <ul className="list-inline social social-intro center-align p-none">
-                  <li className="facebook">
-                    <a href="#">
-                      <i className="fa fa-facebook" />
-                    </a>
-                  </li>
-                  <li className="twitter">
-                    <a href="#">
-                      <i className="fa fa-twitter" />
-                    </a>
-                  </li>
-                  <li className="google-plus">
-                    <a href="#">
-                      <i className="fa fa-google-plus" />
-                    </a>
-                  </li>
-                  <li className="linkedin">
-                    <a href="#">
-                      <i className="fa fa-linkedin" />
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
-              {/* Social Media Profiles Ends */}
             </div>
-            {/* Contact Infos Ends */}
-            {/* Contact Form Starts */}
+            {/* Right Section */}
             <div className="col s12 m7 l7 xl8 rightside">
               <h6 className="uppercase m-none font-weight-700">
                 Feel free to drop me a line
               </h6>
-              <div className="row">
-                <p className="col s12 m12 l12 xl10 second-font">
-                  If you want to say hello, fill out the form below and I will reply to you
-                  shortly.
-                </p>
-              </div>
               <form className="contactform" onSubmit={(e) => onSubmit(e)}>
-                {/* Name Field Starts */}
                 <div className="input-field second-font">
                   <i className="fa fa-user prefix" />
                   <input
                     id="name"
                     name="name"
-                    onChange={(e) => onChange(e)}
+                    onChange={onChange}
                     value={name}
                     type="text"
                     className="validate"
@@ -142,38 +116,29 @@ const GetInTouch = () => {
                     Your Name
                   </label>
                 </div>
-                {/* Name Field Ends */}
-                {/* Email Field Starts */}
                 <div className="input-field second-font">
                   <i className="fa fa-envelope prefix" />
                   <input
                     id="email"
                     type="email"
                     name="email"
-                    onChange={(e) => onChange(e)}
+                    onChange={onChange}
                     value={email}
                     className="validate"
-                    required=""
                   />
                   <label htmlFor="email">Your Email</label>
                 </div>
-                {/* Email Field Ends */}
-                {/* Comment Textarea Starts */}
                 <div className="input-field second-font">
                   <i className="fa fa-comments prefix" />
                   <textarea
-                    id="comment"
+                    id="message"
                     name="message"
-                    onChange={(e) => onChange(e)}
+                    onChange={onChange}
                     value={message}
                     className="materialize-textarea"
-                    required=""
-                    defaultValue={""}
                   />
-                  <label htmlFor="comment">Your Comment</label>
+                  <label htmlFor="message">Your Message</label>
                 </div>
-                {/* Comment Textarea Ends */}
-                {/* Submit Form Button Starts */}
                 <div className="col s12 m12 l9 xl8 submit-form">
                   <button
                     className="btn font-weight-700"
@@ -183,26 +148,20 @@ const GetInTouch = () => {
                     Send Message <i className="fa fa-send" />
                   </button>
                 </div>
-                {/* Submit Form Button Ends */}
                 <div className="col s12 m12 l8 xl8 form-message">
-                  <div
-                    className={error ? "red-text" : "green-text"}
-                    style={{ opacity: error == null ? "0" : "1" }}
-                  >
-                    <span>
-                      {error
-                        ? "Please Fill Required Fields"
-                        : "Your message has been received, We will contact you soon."}
-                    </span>
-                  </div>
+                  {error && (
+                    <div className={error.includes("successfully") ? "green-text" : "red-text"}>
+                      <span>{error}</span>
+                    </div>
+                  )}
                 </div>
               </form>
             </div>
-            {/* Contact Form Ends */}
           </div>
         </div>
       </div>
     </SectionContainer>
   );
 };
+
 export default memo(GetInTouch);
