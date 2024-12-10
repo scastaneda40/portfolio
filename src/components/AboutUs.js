@@ -550,18 +550,18 @@ const AboutUs = ({ dark }) => {
             <div className="col s12 m4 l4 center-align">
               <h3>
                 <i className="fa fa-handshake-o" />
-                <span className="font-weight-900">89+</span>
+                <span className="font-weight-900">50k+</span>
               </h3>
-              <h6 className="uppercase font-weight-700">Done Projects</h6>
+              <h6 className="uppercase font-weight-700">Users Served</h6>
             </div>
             {/* Fact Badge Item Ends */}
             {/* Fact Badge Item Starts */}
             <div className="col s12 m4 l4 center-align">
               <h3>
-                <i className="fa fa-heart-o" />
-                <span className="font-weight-900">77+</span>
+                <i className="fa fa-lightbulb-o" />
+                <span className="font-weight-900">7+</span>
               </h3>
-              <h6 className="uppercase font-weight-700">Happy customers</h6>
+              <h6 className="uppercase font-weight-700">Languages Learned</h6>
             </div>
             {/* Fact Badge Item Ends */}
           </div>

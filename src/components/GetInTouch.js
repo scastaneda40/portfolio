@@ -19,10 +19,10 @@ const GetInTouch = () => {
     } else {
       emailjs
         .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
+          "service_uck1hkq", // service id
+          "template_ea99i99", // template id
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "SrCPeEA5iPN4pvUND" // public api
         )
         .then(
           (response) => {

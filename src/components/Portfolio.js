@@ -41,12 +41,12 @@ const Portfolio = () => {
               <a href="#" onClick={() => activeShowProject(1)}>
                 <img
                   className="responsive-img"
-                  src="images/projects/project-1.jpg"
+                  src="images/projects/imagifydash.jpg"
                   alt="Project"
                 />
                 <div className="valign-wrapper">
                   <span className="font-weight-700 uppercase">
-                    Image Project
+                    AI Image Generator App
                   </span>
                 </div>
               </a>
@@ -57,12 +57,12 @@ const Portfolio = () => {
               <a href="#" onClick={() => activeShowProject(2)}>
                 <img
                   className="responsive-img"
-                  src="images/projects/project-2.jpg"
+                  src="images/projects/elevateddash.png"
                   alt="Project"
                 />
                 <div className="valign-wrapper">
                   <span className="font-weight-700 uppercase">
-                    Slider Project
+                    Music Studio Web Design
                   </span>
                 </div>
               </a>
@@ -73,19 +73,19 @@ const Portfolio = () => {
               <a href="#" onClick={() => activeShowProject(3)}>
                 <img
                   className="responsive-img"
-                  src="images/projects/project-3.jpg"
+                  src="images/projects/kedash.png"
                   alt="Project"
                 />
                 <div className="valign-wrapper">
                   <span className="font-weight-700 uppercase">
-                    Youtube Video
+                    Realtor Web Design
                   </span>
                 </div>
               </a>
             </div>
             {/* Project Ends */}
             {/* Project Starts */}
-            <div className="col s12 m6 l6 xl4" data-panel="panel-4">
+            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-4">
               <a href="#" onClick={() => activeShowProject(4)}>
                 <img
                   className="responsive-img"
@@ -96,10 +96,10 @@ const Portfolio = () => {
                   <span className="font-weight-700 uppercase">Local Video</span>
                 </div>
               </a>
-            </div>
+            </div> */}
             {/* Project Ends */}
             {/* Project Starts */}
-            <div className="col s12 m6 l6 xl4" data-panel="panel-5">
+            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-5">
               <a href="#" onClick={() => activeShowProject(5)}>
                 <img
                   className="responsive-img"
@@ -112,10 +112,10 @@ const Portfolio = () => {
                   </span>
                 </div>
               </a>
-            </div>
+            </div> */}
             {/* Project Ends */}
             {/* Project Starts */}
-            <div className="col s12 m6 l6 xl4" data-panel="panel-6">
+            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-6">
               <a href="#" onClick={() => activeShowProject(6)}>
                 <img
                   className="responsive-img"
@@ -128,10 +128,10 @@ const Portfolio = () => {
                   </span>
                 </div>
               </a>
-            </div>
+            </div> */}
             {/* Project Ends */}
             {/* Project Starts */}
-            <div className="col s12 m6 l6 xl4" data-panel="panel-7">
+            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-7">
               <a href="#" onClick={() => activeShowProject(7)}>
                 <img
                   className="responsive-img"
@@ -144,10 +144,10 @@ const Portfolio = () => {
                   </span>
                 </div>
               </a>
-            </div>
+            </div> */}
             {/* Project Ends */}
             {/* Project Starts */}
-            <div className="col s12 m6 l6 xl4" data-panel="panel-8">
+            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-8">
               <a href="#" onClick={() => activeShowProject(8)}>
                 <img
                   className="responsive-img"
@@ -160,10 +160,10 @@ const Portfolio = () => {
                   </span>
                 </div>
               </a>
-            </div>
+            </div> */}
             {/* Project Ends */}
             {/* Project Starts */}
-            <div className="col s12 m6 l6 xl4" data-panel="panel-9">
+            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-9">
               <a href="#" onClick={() => activeShowProject(9)}>
                 <img
                   className="responsive-img"
@@ -176,7 +176,7 @@ const Portfolio = () => {
                   </span>
                 </div>
               </a>
-            </div>
+            </div> */}
             {/* Project Ends */}
           </div>
         </div>

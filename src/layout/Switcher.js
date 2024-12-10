@@ -93,12 +93,12 @@ const Switcher = () => {
             Dark
           </label>
           <br />
-          <a
+          {/* <a
             href=""
             className="waves-effect waves-light btn font-weight-700 purchase hoverable"
           >
             <i className="fa fa-shopping-cart" /> Purchase
-          </a>
+          </a> */}
           <div id="hideSwitcher" onClick={() => setToggle(false)}>
             &times;
           </div>
