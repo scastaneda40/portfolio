@@ -87,7 +87,7 @@ const GetInTouch = () => {
               <br />
               {/* Contacts Ends */}
               {/* Social Media Profiles Starts */}
-              <h6 className="font-weight-700 uppercase">Social Profiles</h6>
+              {/* <h6 className="font-weight-700 uppercase">Social Profiles</h6>
               <div className="social">
                 <ul className="list-inline social social-intro center-align p-none">
                   <li className="facebook">
@@ -111,7 +111,7 @@ const GetInTouch = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               {/* Social Media Profiles Ends */}
             </div>
             {/* Contact Infos Ends */}
