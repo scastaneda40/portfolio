@@ -37,7 +37,7 @@ const Demo = () => {
                       href="/index-dark"
                       className="img_container"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       <img
                         src="demo/assets/images/dark.jpg"
@@ -52,7 +52,7 @@ const Demo = () => {
                       <a
                         href="/index-dark"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="btn"
                       >
                         view demo
@@ -68,7 +68,7 @@ const Demo = () => {
                       href="/"
                       className="img_container"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       <img
                         src="demo/assets/images/light.jpg"
@@ -83,7 +83,7 @@ const Demo = () => {
                       <a
                         href="/"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="btn"
                       >
                         view demo
@@ -106,7 +106,7 @@ const Demo = () => {
             Designed with <span className="heart">❤</span> by{" "}
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://themeforest.net/user/marketify"
             >
               Marketify

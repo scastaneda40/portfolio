@@ -77,6 +77,7 @@ const ProjectDetails = () => {
               href="https://imagify-virid.vercel.app/"
               className="waves-effect waves-light btn font-weight-700"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Preview <i className="fa fa-external-link" />
             </a>
@@ -142,6 +143,7 @@ const ProjectDetails = () => {
               href="https://www.getelevatednow.com/"
               className="waves-effect waves-light btn font-weight-700"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Preview <i className="fa fa-external-link" />
             </a>
@@ -208,6 +210,7 @@ const ProjectDetails = () => {
               href="https://www.ketherealtor.com/"
               className="waves-effect waves-light btn font-weight-700"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Preview <i className="fa fa-external-link" />
             </a>
@@ -531,7 +534,7 @@ const ProjectDetails = () => {
         {/* Close Work Icon Starts */}
         <img
           alt="close"
-          src="images/close-button.png"
+          src="images/close-btn.png"
           className="control-button bl-icon-close"
           onClick={() => {
             showProjectFunction();

@@ -20,7 +20,7 @@ const SectionContainer = ({ children, sectionName, title }) => {
       {children}
       <img
         alt="close"
-        src="images/close-button.png"
+        src="images/close-btn.png"
         className="bl-icon-close"
         onClick={() => closeSection()}
       />
