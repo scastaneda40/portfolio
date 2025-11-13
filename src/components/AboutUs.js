@@ -248,6 +248,16 @@ const Skills = () => (
               </p>
             </div>
             {/* Single Skills Ends */}
+            {/* Single Skills Starts */}
+            <div className="resume-content">
+              <h6 className="uppercase">webgpu</h6>
+              <p>
+                <i className="fa fa-star" /> <i className="fa fa-star" />{" "}
+                <i className="fa fa-star" /> <i className="fa fa-star-o" />{" "}
+                <i className="fa fa-star-o" />
+              </p>
+            </div>
+            {/* Single Skills Ends */}
           </div>
           {/* Skills Row Ends */}
           {/* Skills Row Starts */}
@@ -319,6 +329,16 @@ const Skills = () => (
                 <i className="fa fa-star" /> <i className="fa fa-star" />{" "}
                 <i className="fa fa-star" />{" "}
                 <i className="fa fa-star-half-empty" />{" "}
+                <i className="fa fa-star-o" />
+              </p>
+            </div>
+            {/* Single Skills Ends */}
+            {/* Single Skills Starts */}
+            <div className="resume-content">
+              <h6 className="uppercase">three.js</h6>
+              <p>
+                <i className="fa fa-star" /> <i className="fa fa-star" />{" "}
+                <i className="fa fa-star" /> <i className="fa fa-star-o" />{" "}
                 <i className="fa fa-star-o" />
               </p>
             </div>
@@ -409,7 +429,7 @@ const AboutUs = ({ dark }) => {
                 <ul className="second-font list-1">
                   <li style={{ marginTop: "20px" }}>
                     <a
-                      href="/StephenCastanedaDevRes.pdf"
+                      href="/StephenSmith_Resume_2025.pdf"
                       className="btn font-weight-700"
                       download
                     >
