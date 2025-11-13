@@ -381,7 +381,11 @@ const AboutUs = ({ dark }) => {
                     Master&apos;s degree in Music Education. These days, I
                     channel that same creativity and attention to detail into
                     crafting sleek, user-friendly web applications with React,
-                    JavaScript, and TypeScript.
+                    JavaScript, and TypeScript. My recent work explores how
+                    WebGPU and Three.js can bring cinematic visuals to the
+                    web—from interactive 3D memory walls to GPU-accelerated
+                    particle systems—as I continue diving deeper into real-time
+                    rendering and creative technology.
                   </p>
 
                   <p>
