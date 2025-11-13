@@ -49,7 +49,11 @@ const GetInTouch = () => {
       )
       .then(
         (response) => {
-          console.log("Email sent successfully!", response.status, response.text);
+          console.log(
+            "Email sent successfully!",
+            response.status,
+            response.text
+          );
           setError("Your message has been sent successfully!"); // Success message
           setMailData({ name: "", email: "", message: "" }); // Clear form
           clearError();
@@ -89,7 +93,7 @@ const GetInTouch = () => {
               </span>
               <h6 className="font-weight-700 uppercase">Email</h6>
               <span className="font-weight-400 second-font">
-                <i className="fa fa-envelope" /> stephen.castaneda40@gmail.com
+                <i className="fa fa-envelope" /> stephenlsmith1906@gmail.com
               </span>
               <h6 className="font-weight-700 uppercase">Location</h6>
               <span className="font-weight-400 second-font">
@@ -150,7 +154,13 @@ const GetInTouch = () => {
                 </div>
                 <div className="col s12 m12 l8 xl8 form-message">
                   {error && (
-                    <div className={error.includes("successfully") ? "green-text" : "red-text"}>
+                    <div
+                      className={
+                        error.includes("successfully")
+                          ? "green-text"
+                          : "red-text"
+                      }
+                    >
                       <span>{error}</span>
                     </div>
                   )}

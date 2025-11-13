@@ -4,7 +4,8 @@ import { directionHover } from "../utils";
 import SectionContainer from "./SectionContainer";
 
 const Portfolio = () => {
-  const { showProjectFunction, activeProjectFunction } = useContext(Context);
+  const { showProjectFunction, activeProjectFunction, projectsData } =
+    useContext(Context);
   useEffect(() => {
     directionHover();
   }, []);
@@ -36,148 +37,26 @@ const Portfolio = () => {
             <span className="outer-line" />
           </div>
           <div className="row center-align da-thumbs" id="bl-work-items">
-            {/* Project Starts */}
-            <div className="col s12 m6 l6 xl4" data-panel="panel-1">
-              <a href="#" onClick={() => activeShowProject(1)}>
-                <img
-                  className="responsive-img"
-                  src="images/projects/imagifydash.jpg"
-                  alt="Project"
-                />
-                <div className="valign-wrapper">
-                  <span className="font-weight-700 uppercase">
-                    AI Image Generator App
-                  </span>
-                </div>
-              </a>
-            </div>
-            {/* Project Ends */}
-            {/* Project Starts */}
-            <div className="col s12 m6 l6 xl4" data-panel="panel-2">
-              <a href="#" onClick={() => activeShowProject(2)}>
-                <img
-                  className="responsive-img"
-                  src="images/projects/elevateddash.png"
-                  alt="Project"
-                />
-                <div className="valign-wrapper">
-                  <span className="font-weight-700 uppercase">
-                    Music Studio Web Design
-                  </span>
-                </div>
-              </a>
-            </div>
-            {/* Project Ends */}
-            {/* Project Starts */}
-            <div className="col s12 m6 l6 xl4" data-panel="panel-3">
-              <a href="#" onClick={() => activeShowProject(3)}>
-                <img
-                  className="responsive-img"
-                  src="images/projects/kedash.png"
-                  alt="Project"
-                />
-                <div className="valign-wrapper">
-                  <span className="font-weight-700 uppercase">
-                    Realtor Web Design
-                  </span>
-                </div>
-              </a>
-            </div>
-            {/* Project Ends */}
-            {/* Project Starts */}
-            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-4">
-              <a href="#" onClick={() => activeShowProject(4)}>
-                <img
-                  className="responsive-img"
-                  src="images/projects/project-4.jpg"
-                  alt="Project"
-                />
-                <div className="valign-wrapper">
-                  <span className="font-weight-700 uppercase">Local Video</span>
-                </div>
-              </a>
-            </div> */}
-            {/* Project Ends */}
-            {/* Project Starts */}
-            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-5">
-              <a href="#" onClick={() => activeShowProject(5)}>
-                <img
-                  className="responsive-img"
-                  src="images/projects/project-5.jpg"
-                  alt="Project"
-                />
-                <div className="valign-wrapper">
-                  <span className="font-weight-700 uppercase">
-                    Image Project
-                  </span>
-                </div>
-              </a>
-            </div> */}
-            {/* Project Ends */}
-            {/* Project Starts */}
-            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-6">
-              <a href="#" onClick={() => activeShowProject(6)}>
-                <img
-                  className="responsive-img"
-                  src="images/projects/project-6.jpg"
-                  alt="Project"
-                />
-                <div className="valign-wrapper">
-                  <span className="font-weight-700 uppercase">
-                    Image Project
-                  </span>
-                </div>
-              </a>
-            </div> */}
-            {/* Project Ends */}
-            {/* Project Starts */}
-            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-7">
-              <a href="#" onClick={() => activeShowProject(7)}>
-                <img
-                  className="responsive-img"
-                  src="images/projects/project-7.jpg"
-                  alt="Project"
-                />
-                <div className="valign-wrapper">
-                  <span className="font-weight-700 uppercase">
-                    Image Project
-                  </span>
-                </div>
-              </a>
-            </div> */}
-            {/* Project Ends */}
-            {/* Project Starts */}
-            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-8">
-              <a href="#" onClick={() => activeShowProject(8)}>
-                <img
-                  className="responsive-img"
-                  src="images/projects/project-8.jpg"
-                  alt="Project"
-                />
-                <div className="valign-wrapper">
-                  <span className="font-weight-700 uppercase">
-                    Image Project
-                  </span>
-                </div>
-              </a>
-            </div> */}
-            {/* Project Ends */}
-            {/* Project Starts */}
-            {/* <div className="col s12 m6 l6 xl4" data-panel="panel-9">
-              <a href="#" onClick={() => activeShowProject(9)}>
-                <img
-                  className="responsive-img"
-                  src="images/projects/project-9.jpg"
-                  alt="Project"
-                />
-                <div className="valign-wrapper">
-                  <span className="font-weight-700 uppercase">
-                    Image Project
-                  </span>
-                </div>
-              </a>
-            </div> */}
-            {/* Project Ends */}
+            {projectsData.map((project) => (
+              <div
+                className="col s12 m6 l6 xl4"
+                data-panel={`panel-${project.id}`}
+                key={project.id}
+              >
+                <a href="#" onClick={() => activeShowProject(project.id)}>
+                  <img
+                    className="responsive-img"
+                    src={`images/projects/project-${project.id}.jpg`}
+                    alt={project.title}
+                  />
+                  <div className="valign-wrapper">
+                    <span className="font-weight-700 uppercase">
+                      {project.title}
+                    </span>
+                  </div>
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>

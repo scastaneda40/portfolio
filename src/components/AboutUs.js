@@ -23,8 +23,10 @@ const Experience = () => (
             <i className="fa fa-calendar-o" /> 2023 - Current
           </span>
           <p>
-          Led the design and implementation of scalable, secure web-based applications for government clients, 
-          completed a WordPress redesign in 3 months (75% faster than the previous timeline) and increased accessibility compliance by 20%.
+            Led the design and implementation of scalable, secure web-based
+            applications for government clients, completed a WordPress redesign
+            in 3 months (75% faster than the previous timeline) and increased
+            accessibility compliance by 20%.
           </p>
         </div>
         {/* Single Experience Ends */}
@@ -38,9 +40,11 @@ const Experience = () => (
             <i className="fa fa-calendar-o" /> 2022 - 2023
           </span>
           <p>
-          Developed a reusable component library using React, Storybook, and Emotion to streamline 
-          UI consistency across teams. Contributed to a tutoring platform serving over 50,000 students, 
-          ensuring high code quality by maintaining 100% test coverage with a test-driven development (TDD) approach.
+            Developed a reusable component library using React, Storybook, and
+            Emotion to streamline UI consistency across teams. Contributed to a
+            tutoring platform serving over 50,000 students, ensuring high code
+            quality by maintaining 100% test coverage with a test-driven
+            development (TDD) approach.
           </p>
         </div>
         {/* Single Experience Ends */}
@@ -54,10 +58,13 @@ const Experience = () => (
             <i className="fa fa-calendar-o" /> 2021 - 2022
           </span>
           <p>
-          Collaborated with three engineers to maintain WordPress sites for over 200 funeral homes, resolving over 
-          50 high-priority bug tickets to significantly reduce client downtime. Contributed to an education platform 
-          for the United Methodist Church, serving over 1,000 concurrent users, and mentored two junior developers while 
-          delivering a high-priority standalone WordPress site through pair programming
+            Collaborated with three engineers to maintain WordPress sites for
+            over 200 funeral homes, resolving over 50 high-priority bug tickets
+            to significantly reduce client downtime. Contributed to an education
+            platform for the United Methodist Church, serving over 1,000
+            concurrent users, and mentored two junior developers while
+            delivering a high-priority standalone WordPress site through pair
+            programming
           </p>
         </div>
         <span className="separator" />
@@ -69,9 +76,10 @@ const Experience = () => (
             <i className="fa fa-calendar-o" /> 2021 - 2022
           </span>
           <p>
-          Created 10 reusable components for a React-based application serving an NFL agent, 
-          integrating data from 22 professional football leagues. Optimized site interactions 
-          and developed a mobile-friendly interface to improve cross-platform performance.
+            Created 10 reusable components for a React-based application serving
+            an NFL agent, integrating data from 22 professional football
+            leagues. Optimized site interactions and developed a mobile-friendly
+            interface to improve cross-platform performance.
           </p>
         </div>
         <span className="separator" />
@@ -83,12 +91,12 @@ const Experience = () => (
             <i className="fa fa-calendar-o" /> 2020 - 2021
           </span>
           <p>
-          Taught adult students JavaScript fundamentals, React, Python, and Django, preparing 
-          them for real-world coding challenges. Designed and delivered an industry-aligned curriculum, 
-          focusing on asynchronous programming and modern frameworks.
+            Taught adult students JavaScript fundamentals, React, Python, and
+            Django, preparing them for real-world coding challenges. Designed
+            and delivered an industry-aligned curriculum, focusing on
+            asynchronous programming and modern frameworks.
           </p>
         </div>
-
 
         {/* Single Experience Ends */}
       </div>
@@ -108,14 +116,16 @@ const Education = () => (
         {/* Single Education Starts */}
         <div className="resume-content">
           <h6 className="uppercase">
-            <span>Full Stack Development Certficate - </span>Nashville Software School
+            <span>Full Stack Development Certficate - </span>Nashville Software
+            School
           </h6>
           <span className="date">
             <i className="fa fa-calendar-o" /> 2020 - 2021
           </span>
           <p>
-          Completed an intensive program focused on JavaScript, React, Python, 
-          and Django, with an emphasis on building scalable, user-friendly applications.
+            Completed an intensive program focused on JavaScript, React, Python,
+            and Django, with an emphasis on building scalable, user-friendly
+            applications.
           </p>
         </div>
         {/* Single Education Ends */}
@@ -123,14 +133,16 @@ const Education = () => (
         {/* Single Education Starts */}
         <div className="resume-content">
           <h6 className="uppercase">
-            <span>Master&apos;s in Music Education - </span>Westminster Choir College
+            <span>Master&apos;s in Music Education - </span>Westminster Choir
+            College
           </h6>
           <span className="date">
             <i className="fa fa-calendar-o" /> 2013 - 2015
           </span>
           <p>
-          Earned a graduate degree specializing in innovative teaching methods and music theory, 
-          preparing students for creative and academic success.
+            Earned a graduate degree specializing in innovative teaching methods
+            and music theory, preparing students for creative and academic
+            success.
           </p>
         </div>
         {/* Single Education Ends */}
@@ -138,14 +150,15 @@ const Education = () => (
         {/* Single Education Starts */}
         <div className="resume-content">
           <h6 className="uppercase">
-            <span>Bachelor&apos;s in Piano Performance - </span>Hampton University
+            <span>Bachelor&apos;s in Piano Performance - </span>Hampton
+            University
           </h6>
           <span className="date">
             <i className="fa fa-calendar-o" /> 2007 - 2012
           </span>
           <p>
-          Graduated with a strong foundation in classical piano performance, 
-          music theory, and artistic collaboration.
+            Graduated with a strong foundation in classical piano performance,
+            music theory, and artistic collaboration.
           </p>
         </div>
         {/* Single Education Ends */}
@@ -362,23 +375,45 @@ const AboutUs = ({ dark }) => {
               </h6>
               <div className="col m12 l12 xl9 p-none">
                 <p className="second-font">
-              <p>Hi there! I&apos;m Stephen, a front-end software engineer with a twist—I started my career as a music educator with a Master&apos;s degree in Music Education. These days, I channel that same creativity and attention to detail into crafting sleek, user-friendly web applications with React, JavaScript, and TypeScript.</p>
+                  <p>
+                    Hi there! I&apos;m Stephen, a front-end software engineer
+                    with a twist—I started my career as a music educator with a
+                    Master&apos;s degree in Music Education. These days, I
+                    channel that same creativity and attention to detail into
+                    crafting sleek, user-friendly web applications with React,
+                    JavaScript, and TypeScript.
+                  </p>
 
-<p>From designing accessible websites for government clients to building dynamic component libraries, I thrive on turning ideas into functional, scalable solutions. Collaboration is my thing, whether it&apos;s with designers, developers, or cross-functional teams.</p>
+                  <p>
+                    From designing accessible websites for government clients to
+                    building dynamic component libraries, I thrive on turning
+                    ideas into functional, scalable solutions. Collaboration is
+                    my thing, whether it&apos;s with designers, developers, or
+                    cross-functional teams.
+                  </p>
 
-<p>When I&apos;m not coding, you can find me creating music, exploring new tech tools, or soaking up the vibrant energy of Los Angeles. My approach combines artistry with engineering to deliver digital experiences that truly resonate.</p>
-
+                  <p>
+                    When I&apos;m not coding, you can find me creating music,
+                    exploring new tech tools, or soaking up the vibrant energy
+                    of Los Angeles. My approach combines artistry with
+                    engineering to deliver digital experiences that truly
+                    resonate.
+                  </p>
                 </p>
               </div>
               <div className="col s12 m12 l6 p-none">
-  <ul className="second-font list-1">
-    <li style={{ marginTop: "20px" }}>
-      <a href="/StephenCastanedaDevRes.pdf" className="btn font-weight-700" download>
-        Download Resume <i className="fa fa-file-pdf-o" />
-      </a>
-    </li>
-  </ul>
-</div>
+                <ul className="second-font list-1">
+                  <li style={{ marginTop: "20px" }}>
+                    <a
+                      href="/StephenCastanedaDevRes.pdf"
+                      className="btn font-weight-700"
+                      download
+                    >
+                      Download Resume <i className="fa fa-file-pdf-o" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
               <div className="col s12 m12 l6 p-none">
                 <ul className="second-font list-2">
@@ -391,11 +426,11 @@ const AboutUs = ({ dark }) => {
                   </li>
                   <li>
                     <span className="font-weight-700">Email: </span>
-                    stephen.castaneda40@gmail.com
+                    stephenlsmith1906@gmail.com
                   </li>
                 </ul>
               </div>
-             
+
               {/* <Link href={`/blog-${dark ? "dark" : "light"}`}>
                 <a className="btn btn-blog font-weight-700">
                   My Blog <i className="fa fa-edit" />
